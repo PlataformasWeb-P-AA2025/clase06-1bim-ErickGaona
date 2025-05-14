@@ -32,6 +32,7 @@ miSaludo2.tipo = "formal"
 # datos demobase.db
 session.add(miSaludo)
 session.add(miSaludo2)
+session.add(lista_datos)
 
 # se confirma las transacciones
 session.commit()

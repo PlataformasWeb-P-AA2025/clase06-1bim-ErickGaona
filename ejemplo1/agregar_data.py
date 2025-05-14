@@ -9,6 +9,13 @@ session = Session()
 # se crea un objeto de tipo
 # Saludo
 
+lista_datos = []
+
+with open('saludos_mundo.csv', newline='', encoding='utf-8') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        lista_datos.append(row)
+
 miSaludo = Saludo()
 miSaludo.mensaje = "Hola que tal"
 miSaludo.tipo = "informal"

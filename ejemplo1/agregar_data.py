@@ -11,7 +11,6 @@ lista_datos = []
 with open('saludos_mundo.csv', newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile, delimiter='|')  
     for row in reader:
-        print(row)  
         saludo = Saludo2(
             mensaje=row['saludo'], 
             tipo=row['tipo'],
